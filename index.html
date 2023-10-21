@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h2>Weather Application</h2>
+        <div class="search-div">
+            <input type="text" id="input">
+            <button id="search-btn">
+                <i id="search-icon" class="fa-solid fa-magnifying-glass fa-2xl" style="color: #ffffff;"></i>
+            </button>
+        </div>
+    </nav>
+    <div class="main">
+        <video autoplay muted loop id="video">
+            <source id="trying-src" src="https://assets.mixkit.co/videos/preview/mixkit-going-down-a-curved-highway-through-a-mountain-range-41576-large.mp4">
+        </video>
+        <div class="container">
+            <h1 id="weather-cond">Check Weather</h1>
+            <h2 id="temp-in-c">0 °C</h2>
+        </div>
+        <div class="other-info">
+            <ul>
+                <li>
+                    <p>Humidity</p>
+                    <p id="humidity">0</p>
+                </li>
+                <li>
+                    <p>Cloud</p>
+                    <p id="cloud">0</p>
+                </li>
+                <li>
+                    <p>Wind Direction</p>
+                    <p id="wind-dir">0</p>
+                </li>
+                <li>
+                    <p>Temperature in F</p>
+                    <p id="temp-in-f">0 F</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/b8c832e94f.js" crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
